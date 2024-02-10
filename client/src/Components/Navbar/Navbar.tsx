@@ -1,29 +1,42 @@
 import React from "react";
+import SearchBar from "../SearchBar/SearchBar";
+import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="w-full border-2 border-black">
+    <div className="w-full  py-1 border-b-2 border-gray-300">
       {/* wrapper */}
-      <div className="border-2 border-red-500 flex justify-around items-center flex-row py-3 px-4">
+      <div className=" flex justify-around items-center flex-row py-3 px-4">
         {/* header - logo */}
         <div>
           <h1 className="font-bold text-xl">Exclusive</h1>
         </div>
         {/* links - routing */}
-        <div className="flex flex-row justify-between px-2 items-center border-2 border-yellow-300">
-          <div className="mx-4"><h1>links</h1></div>
-          <div className="mx-4"><h1>links</h1></div>
-          <div className="mx-4"><h1>links</h1></div>
-          <div className="mx-4"><h1>links</h1></div>
-
-
+        <div className="flex flex-row justify-between px-2 items-center ">
+          <div className="mx-4 font-semibold text-lg underline">
+            <h1 className="">Home</h1>
+          </div>
+          <div className="mx-4 font-semibold text-lg">
+            <h1>Contact</h1>
+          </div>
+          <div className="mx-4 font-semibold text-lg">
+            <h1>About</h1>
+          </div>
+          <div className="mx-4 font-semibold text-lg">
+            <h1>Sign Up</h1>
+          </div>
         </div>
         {/* search */}
-        {/* <div><h1>Search</h1></div> */}
         {/* icons */}
-        <div className="flex flex-row">
-          <h1 className="mx-2">Search</h1>
-          <h1>icons</h1>
+        <div className="flex flex-row justify-between items-center">
+          <div className="mr-[24px]">
+            <SearchBar />
+          </div>
+          <div className="flex flex-row items-center">
+            <AiOutlineHeart className="text-2xl mr-[16px]"/>
+            <AiOutlineShoppingCart className='text-2xl'/>
+          </div>
         </div>
       </div>
     </div>
