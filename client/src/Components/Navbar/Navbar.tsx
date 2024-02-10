@@ -1,4 +1,3 @@
-import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
