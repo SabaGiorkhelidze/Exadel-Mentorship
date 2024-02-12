@@ -35,3 +35,5 @@ const ProductSchema = new mongoose.Schema({
     default: Date.now,
   },
 }, { collection: "products" }); // Specify collection name
+
+const Product = mongoose.model('Product', ProductSchema);
