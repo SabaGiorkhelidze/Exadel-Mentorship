@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+// needs brend ref and category ref as well as schema
+
 
 const ProductSchema = mongoose.Schema(
   {
