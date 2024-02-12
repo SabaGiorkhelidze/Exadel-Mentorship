@@ -1,44 +1,37 @@
 import mongoose from "mongoose";
-// needs brend ref and category ref as well as schema
 
-
-const ProductSchema = mongoose.Schema(
-  {
-    name: String,
+const ProductSchema = new mongoose.Schema({
+  name: {
+    type: String,
     required: true,
+    // unique: true, 
   },
-  // nvidia, amd,
-  {
-    brand: String,
-    required: true,
-  },
-  //CPU GPU RAM etc
-  {
-    category: String,
-    required: true,
-  },
-  {
-    description: String,
+  brand: {
+    type: String, 
     // required: true
   },
-  {
-    specifications: Object, // needs more detailing
-    required: true,
+  category: {
+    type: String,
+    // required: true, 
   },
-  {
-    images: Array,
-    required: true,
+  description: String,
+  specifications: {
+    processor: { type: String },
+    memory: { type: String },
+    clockSpeed: { type: Number },
+    // ... other specs
   },
-  {
-    price: Number,
-    required: true,
+  images: [String], 
+  price: Number,
+  // salePrice: Number, // Optional for discounted prices
+  stock: Number,
+  isActive: Boolean,
+  createdAt: {
+    type: Date,
+    default: Date.now,
   },
-  {
-    stock: Number,
-    required: true,
+  updatedAt: {
+    type: Date,
+    default: Date.now,
   },
-  {
-    isActice: Boolean,
-    required: true,
-  }
-);
+}, { collection: "products" }); // Specify collection name

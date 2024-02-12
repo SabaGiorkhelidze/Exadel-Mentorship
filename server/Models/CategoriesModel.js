@@ -1,13 +1,28 @@
 import mongoose from "mongoose";
 
-const CategorySchema = mongoose.Schema(
-  // ( "CPU", "GPU", "RAM", "Motherboard", "Storage", "Case", "Cooling"))
-
+const CategorySchema = new mongoose.Schema(
   {
-    name: String,
-    required: true,
+    name: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+    },
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+    updatedAt: {
+      type: Date,
+      default: Date.now,
+    },
   },
-  {
-    isActive: Boolean,
-  }
+  { collection: "categories" }
 );
+
+// const Category = mongoose.model("Category", CategorySchema);
