@@ -1,10 +1,17 @@
-import express from "express";
-import cors from "cors";
-import Mongoose from "mongoose";
+// import express from "express";
+// import cors from "cors";
+// import Mongoose from "mongoose";
+// import PagesRouter from "./Routes/PageRoutes.js";
+const express = require("express");
+const Mongoose = require("mongoose");
+const cors = require("cors");
+const { PagesRouter } = require("./Routes/PageRoutes");
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+// console.log('value: ',PagesRouter)
+app.use("/pages", PagesRouter);
 
 app.get("/", async (request, response) => {
   response.status(200).send("hello");

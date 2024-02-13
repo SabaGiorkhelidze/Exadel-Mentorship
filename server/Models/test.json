@@ -1,0 +1,13 @@
+{
+    "name": "Kingston 4GB Ram",
+    "brand": "kingston",
+    "category": "RAM",
+    "description": "very good Ram",
+    "specifications": "bla bla bla",
+    "price": 12.99,
+    "stock": 12,
+    "isActive": true
+    
+
+
+}
