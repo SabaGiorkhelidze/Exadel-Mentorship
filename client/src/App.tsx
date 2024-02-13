@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div>
-          <ItemCard />
+        <div className="flex flex-col">
+            <ItemCard />
+            {/* <DiscountIcon /> */}
         </div>
-        <DiscountIcon />
       </div>
     </>
   );
