@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
-      <div>
-        <ItemCard />
+      <div className="flex">
+        <div>
+          <ItemCard />
+        </div>
         <DiscountIcon />
       </div>
     </>
