@@ -1,8 +1,5 @@
 import { useState } from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import ItemCard from "./Components/Cards/ItemCard";
-import DiscountIcon from "./Components/Discount Icon/DiscountIcon";
-import StarRating from "./Components/StarRating/StarRating";
+import Button from "./Components/Buttons/Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,9 +8,9 @@ function App() {
     <>
       <div className="flex">
         <div className="flex flex-col">
-            <ItemCard />
-            {/* <StarRating /> */}
-            {/* <DiscountIcon /> */}
+            <Button text="View All"/>
+            <h1>hello</h1>
+            <Button text="View All Product"/>
         </div>
       </div>
     </>
