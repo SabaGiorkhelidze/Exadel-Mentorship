@@ -20,6 +20,7 @@ const StarRating = () => {
         //   onClick={() => setRating(index + 1)} // set rating click
         />
       ))}
+      <div className='mx-1'>(88)</div>
     </div>
   );
 };

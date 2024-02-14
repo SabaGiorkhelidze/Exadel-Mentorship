@@ -11,8 +11,8 @@ function App() {
     <>
       <div className="flex">
         <div className="flex flex-col">
-            {/* <ItemCard /> */}
-            <StarRating />
+            <ItemCard />
+            {/* <StarRating /> */}
             {/* <DiscountIcon /> */}
         </div>
       </div>
