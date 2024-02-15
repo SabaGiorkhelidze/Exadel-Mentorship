@@ -63,29 +63,61 @@ const categoryCardData: CategoryCardDataProps[] = [
 ];
 
 const CategoryLayout = () => {
-  const [scrollPosition, setScrollPosition] = useState(0); 
+  const [scrollPosition, setScrollPosition] = useState(0);
   const cardsRef = useRef<HTMLDivElement | null>(null);
 
   const cardsPerPage = 3;
 
   const handleLeftScroll = () => {
     if (scrollPosition > 0) {
-      setScrollPosition(scrollPosition - cardsPerPage);
+      setScrollPosition(scrollPosition - cardsPerPage * getCardWidth());
     }
   };
 
   const handleRightScroll = () => {
-    if (scrollPosition < cardsRef.current?.scrollWidth - cardsPerPage * cardsRef.current?.clientWidth) {
-      setScrollPosition(scrollPosition + cardsPerPage);
+    if (
+      cardsRef.current &&
+      scrollPosition < cardsRef.current.scrollWidth - cardsRef.current.clientWidth
+    ) {
+      setScrollPosition(scrollPosition + cardsPerPage * getCardWidth());
     }
   };
+
+  const getCardWidth = () => {
+    return 235; 
+  };
+
   return (
-    <div>
-      <div className="flex flex-row space-x-4 overflow-x-auto scrollbar-smooth">
-        {categoryCardData.map((item, index) => (
-          <CategoryCard Icon={item.icon} title={item.title} />
-        ))}
+    <div className="flex flex-row space-x-4">
+      {/* Scroll buttons (optional) */}
+      <button
+        className="bg-gray-200 px-2 rounded-l-md hover:bg-gray-300 disabled:opacity-50"
+        onClick={handleLeftScroll}
+        disabled={scrollPosition === 0}
+      >
+        &#8592;
+      </button>
+      <div className="overflow-x-hidden relative" ref={cardsRef}>
+        <div
+          className="flex transition-all duration-200 ease-in-out"
+          style={{ transform: `translateX(-${scrollPosition}px)` }}
+        >
+          {categoryCardData.map((item, index) => (
+            <CategoryCard key={index} Icon={item.icon} title={item.title} />
+          ))}
+        </div>
       </div>
+      <button
+        className="bg-gray-200 px-2 rounded-r-md hover:bg-gray-300 disabled:opacity-50"
+        onClick={handleRightScroll}
+        disabled={
+          !cardsRef.current ||
+          scrollPosition >=
+            cardsRef.current.scrollWidth - cardsRef.current.clientWidth
+        }
+      >
+        &#8594;
+      </button>
     </div>
   );
 };
