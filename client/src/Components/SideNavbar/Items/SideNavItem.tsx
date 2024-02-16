@@ -6,7 +6,7 @@ interface SideNavItemPropTypes {
 
 const SideNavItem = ({ title, dropdown }: SideNavItemPropTypes) => {
   return (
-    <div className="cursor-pointer border-2 border-red-500  flex flex-row items-center justify-between gap-24">
+    <div className="cursor-pointer  flex flex-row items-center justify-between gap-24">
       <h1 className="ml-2 text-lg">{title}</h1>
       {dropdown && <AiOutlineRight className="text-lg font-bold" />}
     </div>
