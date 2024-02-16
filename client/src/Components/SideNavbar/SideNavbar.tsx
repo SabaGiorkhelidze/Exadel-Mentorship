@@ -7,6 +7,10 @@ const SideNavbar = () => {
       <SideNavItem title={"Graphics card"} dropdown={true}/>
       <SideNavItem title={"CPU"} dropdown={false}/>
       <SideNavItem title={"Graphics card"} dropdown={false}/>
+      <SideNavItem title={"Graphics card"} dropdown={false}/>
+      <SideNavItem title={"Graphics card"} dropdown={false}/>
+      <SideNavItem title={"Graphics card"} dropdown={false}/>
+      <SideNavItem title={"Graphics card"} dropdown={false}/>
 
     </div>
   );

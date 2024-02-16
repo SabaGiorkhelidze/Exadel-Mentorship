@@ -3,7 +3,7 @@ import BannerImage from "../../assets/Iphone_frame.png";
 const Banner = () => {
   return (
     <div
-      className=" absolute text-white bg-black w-[700px] h-[300px] rounded-sm"
+      className=" relative text-white bg-black w-[700px] h-[300px] rounded-sm"
       style={{
         backgroundBlendMode: "multiply",
       }}

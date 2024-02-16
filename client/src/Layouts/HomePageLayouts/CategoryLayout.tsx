@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import CategoryCard from "../Components/Cards/CategoryCard";
+import CategoryCard from "../../Components/Cards/CategoryCard";
 import { CiMonitor } from "react-icons/ci";
 import { CiMicrochip } from "react-icons/ci";
 import { CiDesktopMouse1 } from "react-icons/ci";

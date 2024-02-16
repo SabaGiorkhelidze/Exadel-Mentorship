@@ -1,16 +1,19 @@
 // import Button from "./Components/Buttons/Button";
 // import CategoryCard from "./Components/Cards/CategoryCard";
 // import CategoryLayout from "./Layouts/CategoryLayout";
-// import Banner from "./Components/Banner/Banner";
+import Banner from "./Components/Banner/Banner";
+import Navbar from "./Components/Navbar/Navbar";
 import SideNavbar from "./Components/SideNavbar/SideNavbar";
 
 function App() {
 
   return (
     <>
-      <div className="flex">
-        <div className=" ">
+      <div className="">
+        <Navbar />
+        <div className="flex flex-row justify-around my-4">
           <SideNavbar />
+          <Banner />
         </div>
       </div>
     </>
