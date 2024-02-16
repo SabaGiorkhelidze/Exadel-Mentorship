@@ -1,17 +1,16 @@
-import { useState } from "react";
-import Button from "./Components/Buttons/Button";
-import CategoryCard from "./Components/Cards/CategoryCard";
-import CategoryLayout from "./Layouts/CategoryLayout";
-import Banner from "./Components/Banner/Banner";
+// import Button from "./Components/Buttons/Button";
+// import CategoryCard from "./Components/Cards/CategoryCard";
+// import CategoryLayout from "./Layouts/CategoryLayout";
+// import Banner from "./Components/Banner/Banner";
+import SideNavbar from "./Components/SideNavbar/SideNavbar";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
       <div className="flex">
         <div className=" ">
-        <Banner />
+          <SideNavbar />
         </div>
       </div>
     </>
