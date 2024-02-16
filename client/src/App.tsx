@@ -11,9 +11,9 @@ function App() {
     <>
       <div className="">
         <Navbar />
-        <div className="flex flex-row justify-around my-4">
-          <SideNavbar />
-          <Banner />
+        <div className="">
+          {/* <SideNavbar />
+          <Banner /> */}
         </div>
       </div>
     </>
