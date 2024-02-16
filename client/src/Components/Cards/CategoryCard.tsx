@@ -1,8 +1,7 @@
-// this are icons for the layout compoennt data
-
+import { IconType } from "react-icons";
 interface CategoryCardPropTypes {
   title: string;
-  Icon: IconType,
+  Icon: IconType;
 }
 const CategoryCard = ({ title, Icon }: CategoryCardPropTypes) => {
   return (

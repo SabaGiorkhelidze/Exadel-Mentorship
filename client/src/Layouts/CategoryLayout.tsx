@@ -62,8 +62,10 @@ const categoryCardData: CategoryCardDataProps[] = [
   },
 ];
 
+console.log(categoryCardData.length)
+
 const CategoryLayout = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(1);
   const cardsRef = useRef<HTMLDivElement | null>(null);
 
   const cardsPerPage = 3;
@@ -84,7 +86,7 @@ const CategoryLayout = () => {
   };
 
   const getCardWidth = () => {
-    return 235; 
+    return 233; 
   };
 
   return (
