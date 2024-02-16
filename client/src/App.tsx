@@ -4,6 +4,7 @@
 import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
 import SideNavbar from "./Components/SideNavbar/SideNavbar";
+import HomePage from "./Pages/HomePage";
 
 function App() {
 
@@ -12,8 +13,7 @@ function App() {
       <div className="">
         <Navbar />
         <div className="">
-          {/* <SideNavbar />
-          <Banner /> */}
+          <HomePage />
         </div>
       </div>
     </>
