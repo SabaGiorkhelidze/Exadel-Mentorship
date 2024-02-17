@@ -2,6 +2,7 @@
 // import CategoryCard from "./Components/Cards/CategoryCard";
 // import CategoryLayout from "./Layouts/CategoryLayout";
 import Banner from "./Components/Banner/Banner";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import SideNavbar from "./Components/SideNavbar/SideNavbar";
 import HomePage from "./Pages/HomePage";
@@ -13,8 +14,9 @@ function App() {
       <div className="">
         <Navbar />
         <div className="">
-          <HomePage />
+          {/* <HomePage /> */}
         </div>
+        <Footer />
       </div>
     </>
   );
