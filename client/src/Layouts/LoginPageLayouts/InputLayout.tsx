@@ -15,9 +15,9 @@ const InputLayout = () => {
       </div>
 
       <div className="flex flex-row w-full  justify-around items-center">
-          <Button text="Log in" />
-          <h1 className="font-semibold text-red-500">Forgot Password?</h1>
-        </div>
+        <Button text="Log in" />
+        <h1 className="font-semibold text-red-500">Forgot Password?</h1>
+      </div>
     </div>
   );
 };
