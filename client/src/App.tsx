@@ -14,8 +14,8 @@ function App() {
       <div className="">
         <Navbar />
         <div className="">
-          {/* <HomePage /> */}
-          <LoginPage />
+          <HomePage />
+          {/* <LoginPage /> */}
           {/* <HomePage /> */}
         </div>
         <Footer />

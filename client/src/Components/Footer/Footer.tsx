@@ -5,7 +5,7 @@ import QRcode from "../../assets/Qrcode 1.png";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-end pt-12 pb-6 bg-black">
+    <div className="flex flex-col justify-end mt-16 pt-12 pb-6 bg-black">
       <div className="flex gap-5 justify-between items-start self-center px-5 mt-8 w-full max-w-[1170px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex flex-col flex-1 py-0.5 text-base leading-6 text-neutral-50">
           <div className="text-2xl font-bold tracking-wider leading-6 max-md:mr-1">
