@@ -19,12 +19,13 @@ const HomePage = () => {
 
       <HorizontalDivider />
 
-      <div>
-        <ItemCardLayout />
-      </div>
       <div className="my-4">
         <TimerHeader />
       </div>
+      <div>
+        <ItemCardLayout />
+      </div>
+
 
       <div>
         <NewArrival />
