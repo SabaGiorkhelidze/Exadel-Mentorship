@@ -2,6 +2,7 @@ import Banner from "../Components/Banner/Banner";
 import ItemCard from "../Components/Cards/ItemCard";
 import Countdown from "../Components/Countdown/Countdown";
 import HorizontalDivider from "../Components/Divider/HorizontalDivider";
+import FeatureSection from "../Components/Features/FeatureSection";
 import Header from "../Components/Header/Header";
 import NewArrival from "../Components/New Arrival/NewArrival";
 import SideNavbar from "../Components/SideNavbar/SideNavbar";
@@ -27,6 +28,9 @@ const HomePage = () => {
 
       <div>
         <NewArrival />
+      </div>
+      <div>
+        <FeatureSection />
       </div>
     </div>
   );
